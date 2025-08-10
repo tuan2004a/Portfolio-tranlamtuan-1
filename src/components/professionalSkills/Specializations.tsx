@@ -1,0 +1,41 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaptopCode, faPenRuler } from '@fortawesome/free-solid-svg-icons';
+
+
+const Specializations = () => {
+    return (
+        <div className="uk-width-1-1 grid grid-cols-1 md:grid-cols-2 lg:max-xl:grid-cols-1 gap-5">
+            {/* 1 */}
+            <div className='border border-[#393939] uk-overflow-hidden rounded-2xl'>
+                <div className="uk-width-1-1 py-4 pl-4 bg-black uk-flex items-center">
+                    <span className="size-11 uk-border-circle uk-flex uk-flex-center border border-[#3452ff]">
+                        {/* <FontAwesomeIcon icon="fa-solid fa-laptop-code" /> */}
+                        <FontAwesomeIcon icon={faLaptopCode} className='size-5.5 text-white' />
+                    </span>
+                    <h5 className='!text-[26px] !text-white !font-semibold !m-0 !ml-3'>Lập trình web</h5>
+                </div>
+                <div className='!m-0 p-4'>
+                    <p className='!m-0'>Sử dụng React.js (Frontend), Node.js & MongoDB (Backend), kết hợp Tailwind CSS để xây dựng giao diện hiện đại và responsive</p>
+                </div>
+            </div>
+            {/* 1 */}
+
+            {/* 2 */}
+            <div className='border border-[#393939] uk-overflow-hidden rounded-2xl'>
+                <div className="uk-width-1-1 py-4 pl-4 bg-black uk-flex items-center">
+                    <span className="size-11 uk-border-circle uk-flex uk-flex-center border border-[#3452ff]">
+                        {/* <FontAwesomeIcon icon="fa-solid fa-pen-ruler" /> */}
+                        <FontAwesomeIcon icon={faPenRuler} className='size-5 text-white' />
+                    </span>
+                    <h5 className='!text-[26px] !text-white !font-semibold !m-0 !ml-3'>Thiết kế Web</h5>
+                </div>
+                <div className='!m-0 p-4'>
+                    <p className='!m-0'>Tham gia thiết kế website cơ bản trên Figma</p>
+                </div>
+            </div>
+            {/* 2 */}
+        </div>
+    );
+};
+
+export default Specializations;

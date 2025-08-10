@@ -6,7 +6,16 @@ const SideBar = () => {
                     <a href="#" className="uk-height-1-1 !px-4 !text-white" >Home</a>
                 </li>
                 <li className="uk-width h-11 uk-text-default bg-black rounded-lg">
-                    <a href="#" className="uk-height-1-1 !px-4 !text-white" >Home</a>
+                    <a href="#" className="uk-height-1-1 !px-4 !text-white" >Kinh nghiệm</a>
+                </li>
+                <li className="uk-width h-11 uk-text-default bg-black rounded-lg">
+                    <a href="#" className="uk-height-1-1 !px-4 !text-white" >Kỹ năng chuyên môn</a>
+                </li>
+                <li className="uk-width h-11 uk-text-default bg-black rounded-lg">
+                    <a href="#" className="uk-height-1-1 !px-4 !text-white" >Dự án</a>
+                </li>
+                <li className="uk-width h-11 uk-text-default bg-black rounded-lg">
+                    <a href="#" className="uk-height-1-1 !px-4 !text-white" >Liên hệ</a>
                 </li>
             </ul>
             <ul className="uk-nav uk-navbar-left !gap-2 !mt-10">
