@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useRef } from 'react';
 
 const HeroSection: React.FC = () => {
@@ -24,11 +22,11 @@ const HeroSection: React.FC = () => {
     }, []);
 
     return (
-        <div>
-            <h4 className='!text-zinc-400 !text-4xl uk-text-normal !m-0 !mb-2 lg:max-xl:text-center max-md:text-center'>
+        <div className='lg:max-xl:text-center max-md:text-center'>
+            <h4 className='!text-zinc-400 !text-4xl uk-text-normal !m-0 !mb-2'>
                 Xin Chào, Tôi là
             </h4>
-            <h2 className='!text-white !text-5xl uk-text-bold !m-0'>
+            <h2 className='!text-white !text-5xl uk-text-bold !m-0 '>
                 <span ref={el}></span>
             </h2>
         </div>

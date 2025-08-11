@@ -1,6 +1,6 @@
 const SideBar = () => {
     return (
-        <nav className="bg-[#191919] uk-padding rounded-xl h-full">
+        <nav className="bg-[#191919] p-3.5 md:p-5 lg:p-7 xl:p-10 rounded-xl h-full">
             <ul className="uk-nav uk-navbar-left !gap-2 flex-col items-center">
                 <li className="uk-width h-11 uk-text-default bg-black rounded-lg">
                     <a href="#" className="uk-height-1-1 !px-4 !text-white" >Home</a>

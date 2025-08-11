@@ -8,7 +8,7 @@ const Index = () => {
                 Dự án
             </h3>
             <div className=' uk-flex uk-flex-center uk-width-1-1 '>
-                <div className='!max-w-[813px] xl:!w-[813px]'>
+                <div className=''>
                     <Card />
                 </div>
             </div>
