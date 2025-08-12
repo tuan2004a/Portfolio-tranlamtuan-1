@@ -1,33 +1,44 @@
+"use client";
+
 import Introduce from "@/components/introduce/Index";
 import Experience from "@/components/experience/Index";
 import SideBar from "../components/layout/SideBar";
 import ProfessionalSkills from "@/components/professionalSkills/Index";
 import Project from "@/components/project/Index";
 import Contact from "@/components/contact/Index";
+import { Element, Link } from 'react-scroll';
+import {useSmoothScroll} from "@/hook/useSmoothScroll"
 
 
 export default function Home() {
+
+    const scrollToId = useSmoothScroll();
+
     return (
         <div className="h-[100vh] w-full p-3.5 md:p-5 lg:p-7 xl:p-10 !gap-7 xl:!gap-10 uk-flex ">
             <div className="uk-width-1-3 uk-height-1-1 hidden lg:block">
-                <SideBar />
+                <SideBar scrollToId={scrollToId} />
             </div>
-            <main className="scrollPageHidden lg:w-2/3 h-[calc(100vh-28px)] md:h-[calc(100vh-40px)] lg:h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)] overflow-hidden overflow-y-scroll snap-y snap-mandatory scroll-smooth">
-                <div className="bg-[#191919] p-3.5 md:p-5 lg:p-7 xl:p-10 uk-width h-[calc(100vh-28px)] md:h-[calc(100vh-40px)] lg:h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)] snap-start rounded-xl">
-                    <Introduce />
-                </div>
-                <div className="bg-[#191919] p-3.5 md:p-5 lg:p-7 xl:p-10 uk-width h-[calc(100vh-28px)] md:h-[calc(100vh-40px)] lg:h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)] snap-start mt-3.5 lg:mt-5 rounded-xl">
-                    <Experience />
-                </div>
-                <div className="bg-[#191919] p-3.5 md:p-5 lg:p-7 xl:p-10 uk-width h-[calc(100vh-28px)] md:h-[calc(100vh-40px)] lg:h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)] snap-start mt-3.5 lg:mt-5 rounded-xl">
+            <main className="scrollPageHidden lg:w-2/3 h-[calc(100vh-28px)] md:h-[calc(100vh-40px)] lg:h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)] overflow-hidden overflow-y-scroll snap-y snap-mandatory !scroll-smooth">
+                <Element name="introduce">
+                    <section id="introduce" className="bg-[#191919] p-3.5 md:p-5 lg:p-7 xl:p-10 uk-width h-[calc(100vh-28px)] md:h-[calc(100vh-40px)] lg:h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)] snap-start rounded-xl">
+                        <Introduce />
+                    </section>
+                </Element>
+                <Element name="experience">
+                    <section id="experience" className="bg-[#191919] p-3.5 md:p-5 lg:p-7 xl:p-10 uk-width h-[calc(100vh-28px)] md:h-[calc(100vh-40px)] lg:h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)] snap-start mt-3.5 lg:mt-5 rounded-xl">
+                        <Experience />
+                    </section>
+                </Element>
+                <section id="professionalSkills" className="bg-[#191919] p-3.5 md:p-5 lg:p-7 xl:p-10 uk-width h-[calc(100vh-28px)] md:h-[calc(100vh-40px)] lg:h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)] snap-start mt-3.5 lg:mt-5 rounded-xl">
                     <ProfessionalSkills />
-                </div>
-                <div className="bg-[#191919] p-3.5 md:p-5 lg:p-7 xl:p-10 uk-width h-[calc(100vh-28px)] md:h-[calc(100vh-40px)] lg:h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)] snap-start mt-3.5 lg:mt-5 rounded-xl" >
+                </section>
+                <section id="project" className="bg-[#191919] p-3.5 md:p-5 lg:p-7 xl:p-10 uk-width h-[calc(100vh-28px)] md:h-[calc(100vh-40px)] lg:h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)] snap-start mt-3.5 lg:mt-5 rounded-xl" >
                     <Project />
-                </div>
-                <div className="bg-[#191919] p-3.5 md:p-5 lg:p-7 xl:p-10 uk-width h-[calc(100vh-28px)] md:h-[calc(100vh-40px)] lg:h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)] snap-start mt-3.5 lg:mt-5 rounded-xl" >
+                </section>
+                <section id="contact" className="bg-[#191919] p-3.5 md:p-5 lg:p-7 xl:p-10 uk-width h-[calc(100vh-28px)] md:h-[calc(100vh-40px)] lg:h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)] snap-start mt-3.5 lg:mt-5 rounded-xl" >
                     <Contact />
-                </div>
+                </section>
             </main>
         </div>
     );

@@ -4,55 +4,6 @@
     background: linear-gradient(180deg, #3452ff 50%, rgba(211, 165, 131, 1) 50%, rgba(211, 165, 131, 1) 100%);
 }
 
-
-/* typing text animation */
-.typewriter-container {
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.typewriter-line {
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid #ccc;
-    font-family: monospace;
-    font-size: 1.2rem;
-    animation: typing 3s steps(30, end), blink 0.7s step-end infinite;
-}
-
-.line1 {
-    animation-delay: 0s;
-}
-
-.line2 {
-    animation-delay: 3.2s;
-}
-
-.line3 {
-    animation-delay: 6.4s;
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent
-    }
-}
-/* typing text animation */
-
-
 .ClipPathCard{
     clip-path: path("M 175,0 A 10,10 0,0,1 185,10 L 185,195 A 10,10 0,0,1 175,205 L 75,205 A 10,10 0,0,0 65,215 L 65,250 A 10,10 0,0,1 55,260 L 10,260 A 10,10 0,0,1 0,250 L 0,10 A 10,10 0,0,1 10,0 Z");
 }
