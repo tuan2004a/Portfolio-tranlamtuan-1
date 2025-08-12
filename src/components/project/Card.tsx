@@ -5,10 +5,10 @@ import { dataProject } from "@/data/project";
 
 const Card = () => {
     return (
-        <div>
+        <div className="uk-height-1-1">
             {/* Giao diện desktop */}
-            {/* <div className="max-sm:hidden grid grid-rows-2 grid-cols-4 max-sm:grid-cols-2 max-[813px]:grid-cols-3 lg:max-[1350px]:grid-cols-3 gap-5"> */}
-            <div className="max-sm:hidden flex flex-wrap justify-center gap-5">
+            <div className="max-sm:hidden grid grid-rows-2 grid-cols-4 max-sm:grid-cols-2 max-[813px]:grid-cols-3 lg:max-[1350px]:grid-cols-3 gap-5">
+            {/* <div className="max-sm:hidden grid grid-cols-4 gap-5 lg:max-[1060px]:gap-2 size-full"> */}
                 {dataProject.map((items, index) => (
                     <div key={index} className="h-[260px] w-[185px] relative">
                         <div className="block ClipPathCard size-full bg-black text-wrap ">
@@ -29,7 +29,7 @@ const Card = () => {
             </div>
 
             {/* Giao diện mobile */}
-            <div className="sm:hidden" uk-slider="center: true">
+            <div className="sm:hidden uk-height-1-1 flex items-center justify-center" uk-slider="center: true">
                 <div className="uk-position-relative uk-visible-toggle" tabIndex={-1}>
                     <ul className="uk-slider-items uk-grid">
                         {dataProject.map((items, index) => (
