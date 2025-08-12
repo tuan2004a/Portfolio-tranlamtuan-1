@@ -1,3 +1,6 @@
+import { SiGmail } from "react-icons/si";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+
 const SideBar = () => {
     return (
         <nav className="bg-[#191919] p-3.5 md:p-5 lg:p-7 xl:p-10 rounded-xl h-full">
@@ -19,8 +22,22 @@ const SideBar = () => {
                 </li>
             </ul>
             <ul className="uk-nav uk-navbar-left !gap-2 !mt-10">
-                <li className="size-11 uk-text-default bg-black rounded-lg uk-flex uk-flex-center">
-                    <a uk-icon="icon: mail; ratio: 1.4" href="#" className=" !text-white"></a>
+                <li className="size-11 uk-text-default bg-black rounded-lg uk-flex uk-flex-center cursor-pointer">
+                    <a href="mailto:dev.lamtuan@gmail.com" target="_blank">
+                        <SiGmail className="size-5 !text-white"/>
+                    </a>
+                </li>
+                <li className="size-11 uk-text-default bg-black rounded-lg uk-flex uk-flex-center cursor-pointer">
+                    <a href="https://www.linkedin.com/in/lam-tuan-2072a4329/" target="_blank">
+
+                        <FaLinkedin className="size-5 !text-white"/>
+                    </a>
+                </li>
+                <li className="size-11 uk-text-default bg-black rounded-lg uk-flex uk-flex-center cursor-pointer">
+                    <a href="https://github.com/tuan2004a" target="_blank">
+
+                        <FaGithub className="size-5 !text-white"/>
+                    </a>
                 </li>
             </ul>
         </nav>

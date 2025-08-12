@@ -1,7 +1,6 @@
 import React from "react";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { dataProject } from "@/data/project";
+import { FaGithub } from "react-icons/fa";
 
 const Card = () => {
     return (
@@ -20,7 +19,7 @@ const Card = () => {
                                 <h5 className="!m-0 !text-white !text-[17px] uk-text-bolder line-clamp-1">{items.name}</h5>
                             </div>
                             <button className="absolute bottom-1.5 left-2 bg-[#3452ff] p-3.5 rounded-lg">
-                                <FontAwesomeIcon icon={faGithub} className="size-5.5 text-white" />
+                                <FaGithub className="size-5.5 text-white" />
                             </button>
                         </div>
                         <button className="cursor-pointer absolute bottom-0 right-0 bg-[#3452ff] text-white py-3 px-8 font-semibold rounded-md">Button</button>
@@ -44,7 +43,7 @@ const Card = () => {
                                             <h5 className="!m-0 !text-white !text-[17px] uk-text-bolder line-clamp-1">{items.name}</h5>
                                         </div>
                                         <button className="absolute bottom-1.5 left-2 bg-[#3452ff] p-3.5 rounded-lg">
-                                            <FontAwesomeIcon icon={faGithub} className="size-5.5 text-white" />
+                                            <FaGithub className="size-5.5 text-white" />
                                         </button>
                                     </div>
                                     <button className="cursor-pointer absolute bottom-0 right-0 bg-[#3452ff] text-white py-3 px-8 font-semibold rounded-md">Button</button>

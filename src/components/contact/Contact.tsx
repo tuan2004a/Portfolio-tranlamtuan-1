@@ -14,7 +14,6 @@ const Contact = () => {
                     <h4 className="!m-0 !text-lg !font-semibold tracking-wide">Hãy liên hệ với tôi</h4>
                     <p className="text-xs !my-2">Liên hệ qua email để được giải đáp thắc mắc hoặc hợp tác</p>
                     <button type="submit" className="bg-red-300 rounded-md bg-opacity-85">
-
                         <a href="mailto:dev.lamtuan@gmail.com" target="_blank" className="z-10 cursor-pointer flex items-center justify-center gap-x-2 px-4 py-2 !text-black">
                             Đi đến Email
                             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="17" width="17" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +46,7 @@ const Contact = () => {
                     <h4 className="!m-0 !text-lg !font-semibold tracking-wide">Liên hệ qua LinkedIn</h4>
                     <p className="text-xs !my-2">Kết nối chuyên nghiệp để mở rộng mạng lưới và chia sẻ cơ hội việc làm</p>
                     <button className="bg-sky-300 rounded-md bg-opacity-85">
-                        <a href="https://www.linkedin.com/in/lam-tuan-2072a4329/" className="flex items-center justify-center gap-x-2 px-4 py-2 !text-black">
+                        <a href="https://www.linkedin.com/in/lam-tuan-2072a4329/" target="_blank" className="flex items-center justify-center gap-x-2 px-4 py-2 !text-black">
                             Đi đến Linkedin
                             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="17" width="17" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="none" d="M0 0h24v24H0z"></path>
@@ -79,7 +78,7 @@ const Contact = () => {
                     <h4 className="!m-0 !text-lg !font-semibold tracking-wide">Khám phá GitHub của tôi</h4>
                     <p className="text-xs !my-2">Xem các dự án mã nguồn mở và đóng góp ý tưởng cho sản phẩm của tôi.</p>
                     <button className="bg-slate-400 rounded-md bg-opacity-85">
-                        <a href="https://github.com/tuan2004a" className="flex items-center justify-center gap-x-2 px-4 py-2 !text-black">
+                        <a href="https://github.com/tuan2004a" target="_blank" className="flex items-center justify-center gap-x-2 px-4 py-2 !text-black">
                             Đi đến Github
                             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="17" width="17" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="none" d="M0 0h24v24H0z"></path>

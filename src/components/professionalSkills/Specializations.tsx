@@ -1,6 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faPenRuler } from '@fortawesome/free-solid-svg-icons';
-
+import { FaLaptopCode, FaPencilRuler } from "react-icons/fa";
 
 const Specializations = () => {
     return (
@@ -9,8 +7,7 @@ const Specializations = () => {
             <div className='border border-[#393939] uk-overflow-hidden rounded-2xl'>
                 <div className="uk-width-1-1 py-2.5  xl:py-4 pl-3 xl:pl-4 bg-black uk-flex items-center">
                     <span className="size-9 xl:size-11 uk-border-circle uk-flex uk-flex-center border border-[#3452ff]">
-                        {/* <FontAwesomeIcon icon="fa-solid fa-laptop-code" /> */}
-                        <FontAwesomeIcon icon={faLaptopCode} className='size-4.5 xl:size-5.5 text-white' />
+                        <FaLaptopCode className='size-4.5 xl:size-6 text-white'/>
                     </span>
                     <h5 className='!text-xl xl:!text-[26px] !text-white !font-semibold !m-0 !ml-3'>Lập trình web</h5>
                 </div>
@@ -27,8 +24,7 @@ const Specializations = () => {
             <div className='border border-[#393939] uk-overflow-hidden rounded-2xl'>
                 <div className="uk-width-1-1 py-2.5 xl:py-4 pl-3 xl:pl-4 bg-black uk-flex items-center">
                     <span className="size-9 xl:size-11 uk-border-circle uk-flex uk-flex-center border border-[#3452ff]">
-                        {/* <FontAwesomeIcon icon="fa-solid fa-pen-ruler" /> */}
-                        <FontAwesomeIcon icon={faPenRuler} className='size-4 xl:size-5 text-white' />
+                        <FaPencilRuler className='size-4.5 xl:size-5.5 text-white'/>
                     </span>
                     <h5 className='!text-xl xl:!text-[26px] !text-white !font-semibold !m-0 !ml-3'>Thiết kế Web</h5>
                 </div>
