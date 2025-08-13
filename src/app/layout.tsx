@@ -24,7 +24,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className="!scroll-smooth">
+        <html lang="en" className="!scroll-smooth !overflow-hidden">
             <UIkitClientWrapper />
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
         </html>

@@ -17,10 +17,10 @@ export default function Home() {
 
     return (
         <div className="h-[100vh] w-full p-3.5 md:p-5 lg:p-7 xl:p-10 !gap-7 xl:!gap-10 uk-flex overflow-hidden">
-            <div className="z-50 uk-width-1-3 uk-height-1-1 hidden lg:block">
+            <div className="sidebarAnimationLoad z-50 uk-width-1-3 uk-height-1-1 hidden lg:block">
                 <SideBar scrollToId={scrollToId} />
             </div>
-            <main className="z-50 scrollPageHidden lg:w-2/3 h-[calc(100vh-28px)] md:h-[calc(100vh-40px)] lg:h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)] overflow-hidden overflow-y-scroll snap-y snap-mandatory !scroll-smooth">
+            <main className="MainAnimationLoad z-50 scrollPageHidden lg:w-2/3 h-[calc(100vh-28px)] md:h-[calc(100vh-40px)] lg:h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)] overflow-hidden overflow-y-scroll snap-y snap-mandatory !scroll-smooth">
                 <Element name="introduce">
                     <section id="introduce" className="bg-[#191919] p-3.5 md:p-5 lg:p-7 xl:p-10 uk-width h-[calc(100vh-28px)] md:h-[calc(100vh-40px)] lg:h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)] snap-start rounded-xl">
                         <Introduce />
