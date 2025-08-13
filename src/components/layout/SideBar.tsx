@@ -17,40 +17,40 @@ const SideBar = ({scrollToId}:{scrollToId:(id:string)=>void}) => {
                 <Link onClick={()=>scrollToId("project")} to="project" smooth={true} duration={500} className="uk-text-default flex items-center cursor-pointer w-full !h-11 text-left !px-4 !text-white bg-black rounded-lg" >Dự án</Link>
                 <Link onClick={()=>scrollToId("contact")} to="contact" smooth={true} duration={500} className="uk-text-default flex items-center cursor-pointer w-full !h-11 text-left !px-4 !text-white bg-black rounded-lg" >Liên hệ</Link>
             </ul>
-            <ul className="uk-nav uk-navbar-left !gap-2 flex-col items-center">
-                <li className="uk-text-default !h-11 w-full bg-black rounded-lg">
+            <ul className="uk-nav uk-navbar-left !gap-2 flex-col items-center *:!h-11 *:w-full *:rounded-lg *:bg-black">
+                <li className="uk-text-default">
                     <a href="#introduce" className="cursor-pointer size-full text-left !px-4 !text-white " >Home</a>
                 </li>
-                <li className="uk-text-default !h-11 w-full bg-black rounded-lg">
+                <li className="uk-text-defaul">
                     <a href="#experience" className="cursor-pointer size-full text-left !px-4 !text-white " >Kinh nghiệm</a>
                 </li>
-                <li className="uk-text-default !h-11 w-full bg-black rounded-lg">
+                <li className="uk-text-defaul">
                     <a href="#professionalSkills" className="cursor-pointer size-full text-left !px-4 !text-white " >Kỹ năng chuyên môn</a>
                 </li>
-                <li className="uk-text-default !h-11 w-full bg-black rounded-lg">
+                <li className="uk-text-defaul">
                     <a href="#project" className="cursor-pointer size-full text-left !px-4 !text-white " >Dự án</a>
                 </li>
-                <li className="uk-text-default !h-11 w-full bg-black rounded-lg">
+                <li className="uk-text-defaul">
                     <a href="#contact" className="cursor-pointer size-full text-left !px-4 !text-white " >Liên hệ</a>
                 </li>
             </ul>
-            <ul className="uk-nav uk-navbar-left !gap-2 !mt-10">
-                <li className="size-11 uk-text-default bg-black rounded-lg uk-flex uk-flex-center cursor-pointer">
-                    <a className="block !px-4 !text-white font-bold text-2xl" href="mailto:dev.lamtuan@gmail.com" target="_blank">
+            <ul className="uk-nav uk-navbar-left !gap-2 !mt-10 *:bg-black *:hover:bg-[#3452ff] *:size-11 *:rounded-lg *:cursor-pointer">
+                <li className="uk-text-default uk-flex uk-flex-center">
+                    <a className="block !px-4 !text-white font-bold text-2xl" href="https://drive.google.com/file/d/1tVZyWLZWcNFiVWINfPTeb5GI3MJ5yrJr/view?usp=sharing" target="_blank">
                         CV
                     </a>
                 </li>
-                <li className="size-11 uk-text-default bg-black rounded-lg uk-flex uk-flex-center cursor-pointer">
+                <li className="uk-text-default uk-flex uk-flex-center">
                     <a href="mailto:dev.lamtuan@gmail.com" target="_blank">
                         <SiGmail className="size-5 !text-white"/>
                     </a>
                 </li>
-                <li className="size-11 uk-text-default bg-black rounded-lg uk-flex uk-flex-center cursor-pointer">
+                <li className="uk-text-default uk-flex uk-flex-center">
                     <a href="https://www.linkedin.com/in/lam-tuan-2072a4329/" target="_blank">
                         <FaLinkedin className="size-5 !text-white"/>
                     </a>
                 </li>
-                <li className="size-11 uk-text-default bg-black rounded-lg uk-flex uk-flex-center cursor-pointer">
+                <li className="uk-text-default uk-flex uk-flex-center">
                     <a href="https://github.com/tuan2004a" target="_blank">
                         <FaGithub className="size-5 !text-white"/>
                     </a>
