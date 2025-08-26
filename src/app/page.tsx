@@ -9,6 +9,7 @@ import Contact from "@/components/contact/Index";
 import { Element, Link } from 'react-scroll';
 import {useSmoothScroll} from "@/hook/useSmoothScroll"
 import Backround from "@/components/Backround";
+import ButtonMenu from "@/components/ButtonMenu";
 
 
 export default function Home() {
@@ -43,6 +44,9 @@ export default function Home() {
             </main>
             <div className="absolute inset-0 size-full z-10">
                 <Backround />
+            </div>
+            <div className="fixed bottom-7 right-7 z-50 min-lg:hidden">
+                <ButtonMenu/>
             </div>
         </div>
     );
