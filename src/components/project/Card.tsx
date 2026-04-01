@@ -1,60 +1,38 @@
 import React from "react";
 import { dataProject } from "@/data/project";
 import { FaGithub } from "react-icons/fa";
+// import {} from ""
 
 const Card = () => {
-    return (
-        <div className="uk-height-1-1">
-            {/* Giao diện desktop */}
-            <div className="max-sm:hidden grid grid-rows-2 grid-cols-4 max-sm:grid-cols-2 max-[813px]:grid-cols-3 lg:max-[1350px]:grid-cols-3 gap-5">
-            {/* <div className="max-sm:hidden grid grid-cols-4 gap-5 lg:max-[1060px]:gap-2 size-full"> */}
-                {dataProject.map((items, index) => (
-                    <div key={index} className="h-[260px] w-[185px] relative">
-                        <div className="block ClipPathCard size-full bg-black text-wrap ">
-                            <div className="relative uk-width-1-1 h-[205px] p-2">
-                                <div className="overflow-hidden bg-green-500 uk-width-1-1 h-[130px] rounded-lg">
-                                    <img src={items.image || undefined} alt="" className="size-full object-cover" />
-                                </div>
-                                <div className="!text-white !text-[13px] mt-3 mb-0.5 border border-white px-2 rounded-full w-fit">React.Js</div>
-                                <h5 className="!m-0 !text-white !text-[17px] uk-text-bolder line-clamp-1">{items.name}</h5>
-                            </div>
-                            <button className="absolute bottom-1.5 left-2 bg-[#3452ff] p-3.5 rounded-lg">
-                                <FaGithub className="size-5.5 text-white" />
-                            </button>
-                        </div>
-                        <button className="cursor-pointer absolute bottom-0 right-0 bg-[#3452ff] text-white py-3 px-8 font-semibold rounded-md">Button</button>
-                    </div>
-                ))}
-            </div>
-
-            {/* Giao diện mobile */}
-            <div className="sm:hidden uk-height-1-1 flex items-center justify-center" uk-slider="center: true">
-                <div className="uk-position-relative uk-visible-toggle" tabIndex={-1}>
-                    <ul className="uk-slider-items uk-grid">
-                        {dataProject.map((items, index) => (
-                            <li key={index} className="uk-width-auto">
-                                <div className="h-[260px] w-[185px] relative">
-                                    <div className="block ClipPathCard size-full bg-black text-wrap ">
-                                        <div className="relative uk-width-1-1 h-[205px] p-2">
-                                            <div className="overflow-hidden bg-green-500 uk-width-1-1 h-[130px] rounded-lg">
-                                                <img src={items.image || undefined} alt="" className="size-full object-cover" />
-                                            </div>
-                                            <div className="!text-white !text-[13px] mt-3 mb-0.5 border border-white px-2 rounded-full w-fit">React.Js</div>
-                                            <h5 className="!m-0 !text-white !text-[17px] uk-text-bolder line-clamp-1">{items.name}</h5>
-                                        </div>
-                                        <button className="absolute bottom-1.5 left-2 bg-[#3452ff] p-3.5 rounded-lg">
-                                            <FaGithub className="size-5.5 text-white" />
-                                        </button>
-                                    </div>
-                                    <button className="cursor-pointer absolute bottom-0 right-0 bg-[#3452ff] text-white py-3 px-8 font-semibold rounded-md">Button</button>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </div>
-        </div>
-    );
+	return (
+		<div className="uk-height-1-1">
+			{/* Giao diện desktop */}
+			<div className="grid grid-cols-4 max-sm:grid-cols-2 max-[813px]:grid-cols-3 lg:max-[1350px]:grid-cols-3 gap-5">
+				{/* <div className="max-sm:hidden grid grid-cols-4 gap-5 lg:max-[1060px]:gap-2 size-full"> */}
+				{dataProject.map((items, index) => (
+					<div key={index} className="h-[260px] w-[185px] relative">
+						<div className="block size-full bg-black text-wrap relative rounded-lg overflow-hidden ">
+							<div className="overflow-hidden  uk-width-1-1 h-[100px] rounded-lg flex items-center justify-center">
+								<img src={items.image || undefined} alt="" className="size-full object-center object-contain " />
+							</div>
+							<div className="!text-white !text-xs mt-3 mb-1 ml-1.75 border border-white px-1.5 py-px rounded-full w-fit">React.Js</div>
+							<h5 className="!my-0 !text-white !text-[17px] font-bold! line-clamp-2 !mx-2">{items.name}</h5>
+							<div className="absolute bottom-2 flex gap-x-2 w-full px-2 z-50">
+								<a href={items.linkGithub || undefined} target="_blank">
+									<button className=" bg-[#3452ff] p-3.5 rounded-lg cursor-pointer">
+										<FaGithub className="size-5.5 text-white" />
+									</button>
+								</a>
+								<a href={items.LinkWeb || undefined} className="">
+									<button disabled={!items.LinkWeb} className="disabled:bg-gray-500 disabled:cursor-no-drop cursor-pointer bg-[#3452ff] text-white py-3 px-8 font-semibold rounded-md">Button</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	);
 };
 
 export default Card;

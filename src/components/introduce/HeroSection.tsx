@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
     }, []);
 
     return (
-        <div className='lg:max-xl:text-center max-md:text-center'>
+        <div className='text-center'>
             <h4 className='!text-zinc-400 !text-4xl uk-text-normal !m-0 !mb-2'>
                 Xin Chào, Tôi là
             </h4>
