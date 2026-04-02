@@ -1,7 +1,6 @@
 import React from "react";
 import { dataProject } from "@/data/project";
 import { FaGithub } from "react-icons/fa";
-// import {} from ""
 
 const Card = () => {
 	return (
@@ -12,8 +11,8 @@ const Card = () => {
 				{dataProject.map((items, index) => (
 					<div key={index} className="h-[260px] w-[185px] relative">
 						<div className="block size-full bg-black text-wrap relative rounded-lg overflow-hidden ">
-							<div className="overflow-hidden  uk-width-1-1 h-[100px] rounded-lg flex items-center justify-center">
-								<img src={items.image || undefined} alt="" className="size-full object-center object-contain " />
+							<div className="overflow-hidden  uk-width-1-1 h-[100px] rounded-lg flex items-center justify-center relative">
+								<img src={items.image || ""} alt="" className="size-full object-center object-contain " />
 							</div>
 							<div className="!text-white !text-xs mt-3 mb-1 ml-1.75 border border-white px-1.5 py-px rounded-full w-fit">React.Js</div>
 							<h5 className="!my-0 !text-white !text-[17px] font-bold! line-clamp-2 !mx-2">{items.name}</h5>
@@ -24,7 +23,9 @@ const Card = () => {
 									</button>
 								</a>
 								<a href={items.LinkWeb || undefined} className="">
-									<button disabled={!items.LinkWeb} className="disabled:bg-gray-500 disabled:cursor-no-drop cursor-pointer bg-[#3452ff] text-white py-3 px-8 font-semibold rounded-md">Button</button>
+									<button disabled={!items.LinkWeb} className="disabled:bg-gray-500 disabled:cursor-no-drop cursor-pointer bg-[#3452ff] text-white py-3 px-8 font-semibold rounded-md">
+										Button
+									</button>
 								</a>
 							</div>
 						</div>

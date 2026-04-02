@@ -4,7 +4,6 @@ const Skill = () => {
 
 	return (
 		<>
-			
 			<div className=" gap-1.5 md:gap-3 overflow-hidden">
 				<div className="uk-flex uk-flex-wrap uk-flex-center gap-1.5 md:gap-3">
 					{information.map((item, index) => (

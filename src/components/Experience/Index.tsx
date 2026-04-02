@@ -1,5 +1,4 @@
 import React from 'react'
-import BtnSubmit from '@/components/common/button/BtnSubmit';
 import TimeLine from './TimeLine';
 
 const Index = () => {

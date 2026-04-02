@@ -2,8 +2,9 @@
 
 import { SiGmail } from "react-icons/si";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa6";
 
-const SideBar = ({ scrollToId }: { scrollToId: (id: string) => void }) => {
+const SideBar = () => {
 	return (
 		<nav className="bg-[#191919] p-3.5 md:p-5 lg:p-7 xl:p-10 rounded-xl h-full flex flex-col justify-center">
 			<div className="w-full !mb-10 flex items-center justify-center">
@@ -12,7 +13,7 @@ const SideBar = ({ scrollToId }: { scrollToId: (id: string) => void }) => {
 						<div className="relative flex items-center justify-center w-fit">
 							<span className=" z-20 block size-35 uk-border-circle absolute -translate-y-1 translate-x-1 bg-[#3452ff]"></span>
 							<span className="z-50 size-33 uk-flex uk-flex-center overflow-hidden uk-border-circle">
-								<img className=" size-full object-cover object-top " src="/image/avat2.jpg" alt="" />
+								<img className="size-full object-cover object-top " src="/image/avat2.jpg" alt="Ảnh đại diện Trần Lâm Tuấn" />
 							</span>
 							<span className=" z-20 block size-33 uk-border-circle absolute translate-y-2 -translate-x-2 bg-[#d3a583]"></span>
 							<div className="rotate-[40deg] absolute translate-0 uk-flex uk-flex-center gap-4">
@@ -52,9 +53,10 @@ const SideBar = ({ scrollToId }: { scrollToId: (id: string) => void }) => {
 				</li>
 			</ul>
 			<ul className="uk-nav uk-navbar-left !gap-2 !mt-10 *:bg-black *:hover:bg-[#3452ff] *:size-11 *:rounded-lg *:cursor-pointer">
-				<li className="uk-text-default uk-flex uk-flex-center">
-					<a className="block !px-4 !text-white font-bold text-2xl" href="https://drive.google.com/file/d/1tVZyWLZWcNFiVWINfPTeb5GI3MJ5yrJr/view?usp=sharing" target="_blank">
-						CV
+				<li className="size-auto!">
+					<a className="inline-flex w-auto items-center font-bold box-border !text-white py-2.5! px-3!" href="https://drive.google.com/file/d/1tVZyWLZWcNFiVWINfPTeb5GI3MJ5yrJr/view?usp=sharing" target="_blank">
+						<FaDownload className="text-xl!" />
+						<span className="ml-1">Download CV</span>
 					</a>
 				</li>
 				<li className="uk-text-default uk-flex uk-flex-center">

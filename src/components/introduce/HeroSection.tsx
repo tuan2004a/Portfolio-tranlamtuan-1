@@ -4,7 +4,7 @@ const HeroSection: React.FC = () => {
     const el = useRef<HTMLSpanElement | null>(null);
 
     useEffect(() => {
-        let typed: any;
+        let typed: { destroy: () => void } | null = null;
 
         import('typed.js').then((module) => {
             const Typed = module.default;
