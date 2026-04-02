@@ -1,14 +1,14 @@
 "use client";
 
-import Introduce from "@/components/introduce/Index";
-import Experience from "@/components/experience/Index";
+import Introduce from "../components/introduce/Index";
+import Experience from "../components/Experience/Index";
 import SideBar from "../components/layout/SideBar";
-import ProfessionalSkills from "@/components/professionalSkills/Index";
-import Project from "@/components/project/Index";
-import Contact from "@/components/contact/Index";
-import { useSmoothScroll } from "@/hook/useSmoothScroll";
-import Backround from "@/components/Backround";
-import ButtonMenu from "@/components/ButtonMenu";
+import ProfessionalSkills from "../components/professionalSkills/Index";
+import Project from "../components/project/Index";
+import Contact from "../components/contact/Index";
+import { useSmoothScroll } from "../hook/useSmoothScroll";
+import Backround from "../components/Backround";
+import ButtonMenu from "../components/ButtonMenu";
 
 export default function Home() {
 	const scrollToId = useSmoothScroll();
